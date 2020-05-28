@@ -1,0 +1,6 @@
+Taboule # 5000
+Fatoush # 7000
+Batata # 3000
+Mashawi # 49000
+Hamburger # 12000
+Chicken Escalope # 15000

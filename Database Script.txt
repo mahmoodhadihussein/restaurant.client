@@ -1,0 +1,23 @@
+1- Execute the following commands on MySql:
+CREATE DATABASE `restaurantdb` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */;
+
+
+CREATE TABLE `order` (
+  `OrderID` int(11) NOT NULL,
+  `ClientIP` varchar(45) DEFAULT NULL,
+  `ItemName` varchar(45) DEFAULT NULL,
+  `Price` int(11) DEFAULT NULL,
+  `Quantity` int(11) DEFAULT NULL,
+  PRIMARY KEY (`OrderID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+2- In ClientHandler.java in restaurant.server project adjust connection info in the following lines:
+            String URLCon= "jdbc:mysql://127.0.0.1:3306/restaurantdb?useSSL=false&useUnicode=true";
+            String username="root";
+            String password="Am#20092905";
+3- Run MultiThreadedServer.java in restaurant.server project.
+4- In Order.java in restaurant.client adjust server ip "localhost" if you run on your local machine.
+5- Run Order.java in restaurant.server in restaurant.client project .
+6- Add order.
+7- Save and watch the result in the database.
